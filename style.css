@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Body*/
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  /* Faire des limites */
+}
+
+/*Header*/
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed; 
+    z-index: 999;  /*Empêcher des éléments de couvrir le header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo img {
+    width: auto;
+    height: 60px;
+}
+
+.navigation a{
+    color: #d35400;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.navigation a:hover{
+    color: black;
+}
+
+/*Section*/
+section {
+    padding: 100px 200px;
+}
+
+/*Main*/
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(https://static.vecteezy.com/ti/photos-gratuite/p1/2078115-une-personne-miniature-debout-sur-un-fond-blanc-gratuit-photo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 20px;
+    color: #d35400;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.main h3 {
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.main .main-btn {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: black;
+    background-color: #d35400;
+    align-items: center;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.7s ease;
+}
+
+.main .main-btn:hover {
+    transform: scale(1.1);
+}
+
+.main .social-icons a{
+    color: #d35400;
+    margin-right: 30px;
+}
+
+/*Activity*/
+.title {
+    display: flex;
+    justify-content: center;
+    color : #d35400;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width : 20em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin : 20px;
+    transition: 0.7s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon, h3 {
+    color: #d35400;
+}
+
+#services p {
+    margin-top: 30px;
+}
+
+/*Projects*/
+.projects {
+    background-color: #f0f0f0;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.projects .project-card {
+    background-color: #fff;
+    border: solid 5px #d35400;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.projects .project-card:hover {
+    transform: scale(1.1);
+}
+
+.projects .project-image {
+    opacity: 0.8;
+}
+
+.projects .project-card:hover .project-image{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.projects .project-image img {
+    width: 100%;
+}
+
+.projects .project-info {
+    padding : 1em;
+}
+
+.projects .project-category {
+    font-size: 0.8em;
+    color: black;
+}
+
+.projects .project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.projects .project-link {
+    text-decoration: none;
+    color: #d35400;
+}
+
+/*Footer*/
+
+footer{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-title {
+    color: #fff;
+}
+
+.footer-title span {
+    color: #d35400;
+}
+
+.footer-social-icons a{
+    color: #d35400;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 10px;
+    }
+    
+    .navigation a{
+        margin-left: 2px;
+    }
+}
+
+
+
